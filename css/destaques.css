@@ -1,0 +1,44 @@
+.container-destaques {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    margin-left: 40px;
+}
+
+.destaques {
+    width: 30%;
+    height: auto;
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column; /* Torna os itens empilhados verticalmente */
+    align-items: flex-start;
+}
+
+.header-destaques {
+    display: flex; /* Mantém o ícone e o título na mesma linha */
+    align-items: center;
+    margin-bottom: 8px; /* Espaço entre o cabeçalho e o parágrafo */
+}
+
+.icon-destaques {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px; /* Espaço entre o ícone e o título */
+}
+
+.destaques h2 {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin: 0;
+}
+
+.destaques p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    letter-spacing: 0.5px;
+    line-height: 24px;
+}

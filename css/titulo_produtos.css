@@ -1,0 +1,14 @@
+.container-titulo-produtos {
+    display: flex;
+    justify-content: center;
+    margin: 10px 10px;
+    margin-left: 20px;
+}
+
+.container-titulo-produtos h3 {
+    font-size: 24px;
+    color: #333;
+    font-weight: bold;
+    margin: 0 40px;
+    text-align: center;
+}

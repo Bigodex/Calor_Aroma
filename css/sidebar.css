@@ -1,0 +1,64 @@
+.sidebar {
+    height: 100%;
+    width: 0px; /* Largura inicial da sidebar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #82a47d;
+    padding-top: 20px;
+    transition: width 0.3s; /* Animação para a transição de largura */
+    border-right: 1px solid #000;
+    margin-top: 60px; /* Margem superior da sidebar */
+    z-index: 1;
+}
+
+.sidebar::before {
+    content: '➡'; /* Conteúdo da flecha */
+    font-weight: bold; /* Negrito */
+    position: absolute;
+    top: 6%;
+    right: -35px; /* Posição da flecha fora da sidebar */
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #333;
+    background-color: transparent;
+    padding: 5px;
+    cursor: pointer;
+    background-color: #82a47d;
+    border-radius: 6px;
+    border: 1px solid #000;
+}
+
+.sidebar:hover {
+    width: 230px; /* Largura da sidebar ao passar o mouse */
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar nav ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar nav ul li a {
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    white-space: nowrap; /* Impede a quebra de linha do texto */
+    overflow: hidden; /* Esconde o texto que não cabe na largura inicial */
+    font-weight: bold;
+}
+
+.sidebar nav ul li a .icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+}
+
+.sidebar nav ul li a:hover {
+    text-decoration: underline;
+}
